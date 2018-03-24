@@ -2,12 +2,13 @@ import Header from './Header';
 import React from 'react';
 import { connect } from 'react-redux';
 import { APP_LOAD, REDIRECT } from '../constants/actionTypes';
-import { Route, Switch } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Home from '../components/Home';
 import { store } from '../store';
 import { push } from 'react-router-redux';
 
 const mapStateToProps = state => {
+    console.log("mapStateToProps");
     return {
         appLoaded: state.common.appLoaded,
         appName: state.common.appName,
@@ -31,12 +32,10 @@ class App extends React.Component {
     }
 
     componentWillMount() {
-        const token = window.localStorage.getItem('jwt');
-        if (token) {
-            agent.setToken(token);
-        }
+        console.log("componentWillMount");
+        //const token = window.localStorage.getItem('jwt');
 
-        this.props.onLoad(token ? agent.Auth.current() : null, token);
+        //this.props.onLoad(token ? agent.Auth.current() : null, token);
     }
 
     render() {
@@ -45,17 +44,8 @@ class App extends React.Component {
                 <div>
                     <Header>
                         appName={this.props.appName}
-                    <Switch>
+
                         <Route exact path="/" component={Home}/>
-                        /*<Route path="/login" component={Login} />
-                        <Route path="/register" component={Register} />
-                        <Route path="/editor/:slug" component={Editor} />
-                        <Route path="/editor" component={Editor} />
-                        <Route path="/article/:id" component={Article} />
-                        <Route path="/settings" component={Settings} />
-                        <Route path="/@:username/favorites" component={ProfileFavorites} />
-                        <Route path="/@:username" component={Profile} />*/
-                    </Switch>
                     </Header>
                 </div>
             );
@@ -66,6 +56,7 @@ class App extends React.Component {
                     appName={this.props.appName}
                     currentUser={this.props.currentUser} />
                 </Header>
+                <div>Hello Women Who Code from  else!</div>
             </div>
         );
     }

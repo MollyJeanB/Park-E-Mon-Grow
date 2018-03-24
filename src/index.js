@@ -12,6 +12,7 @@ ReactDOM.render((
     <Provider store={store}>
         <ConnectedRouter history={history}>
             <Switch>
+                <div>Hey there! - index.js</div>
                 <Route path="/" component={App} />
             </Switch>
         </ConnectedRouter>
