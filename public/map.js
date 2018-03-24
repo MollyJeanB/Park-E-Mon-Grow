@@ -1,11 +1,20 @@
 function initMap() {
-  var uluru = {lat: -25.363, lng: 131.044};
+  var puppet = {lat: 45.5200937, lng:-122.6727816};
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 4,
-    center: {lat: 45.5200937, lng:-122.6727816}
+    center: puppet
   });
   var marker = new google.maps.Marker({
-    position: {lat: 45.5200937, lng:-122.6727816},
+    position: puppet,
     map: map
   });
 }
+
+
+fetch('https://io.adafruit.com/api/v2/missyt/feeds/humidity/data?limit=2') // Call the fetch function passing the url of the API as a parameter
+.then(data=>data = data.json()).then(data => console.log(data))
+
+.catch(function() {
+  console.log('we fucked up!')
+    // This is where you run code if the server returns any errors
+});
