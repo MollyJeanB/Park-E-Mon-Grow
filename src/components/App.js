@@ -6,44 +6,48 @@ import MapContainer from "./map"
 import Humidity from "./humidity"
 
 var readingsStyle = {
-    type: "row",
-    backgroundColor: "#FFFFF",
-    border: "2px solid",
+    className: "row",
+    border: "1px solid",
     height: "200px",
-    width: "auto"
+    width: "auto",
+    backgroundColor: "#FFFFFF",
+
 };
 
 var tempStyle = {
-    type: "col-md-8"
+    className: "col-md-6"
 }
 
 var humidStyle = {
-    type: "col-md-8"
+    className: "col-md-6"
 }
 
 var teamStyle = {
-    class: "row",
-    backgroundColor: "#ABACA6",
+    className: "row",
+    paddingLeft: "35%",
+    backgroundColor: "#FFFFFF",
     border: "1px solid",
     height: "200px",
-    width: "auto"
+    width: "auto",
+    borderRadius: "25px 25px 0px 0px",
+    border: "1px solid"
 };
 
 var mapStyle = {
-    border: "2px solid",
-    class: "row",
+    className: "row",
     paddingLeft: "8%",
     paddingTop: "2%",
     paddingBottom: "2%",
     height: "550px",
     width: "auto",
+    borderRadius: "0px 0px 25px 25px",
+    border: "1px solid "
 }
 
 var logoStyle = {
     width: "auto",
     height: "300px",
-    type: "row",
-    backgroundColor:"#504040"
+    className: "row"
 
 }
 
@@ -54,20 +58,27 @@ class App extends Component {
       <div className="App">
         <header className="App-header" style={logoStyle}>
             <img
-                src = {require("../images/Parkemon-01.png")}
+                src = {require("../images/parkemon-01.png")}
                 alt = "Missing Logo"
-                className="img-responsive" />
+                className="img-responsive"
+                height = "250px"/>
         </header>
           <div style={teamStyle}>
-              <div class="col-md-8"><p>Team Name:</p> //add team element</div>
-              <div class="col-md-8"><p>Team Points:</p> // add team points</div>
+              <div className={"col-md-6"}>
+                  <h4>Team Name:</h4> <h5>Columbia Slough Watershed Counsel</h5>
+              </div>
+
+              <div className={"col-md-6"}>
+                  <h4>Team Points: 11</h4>
+              </div>
+
           </div>
           <div style={readingsStyle}>
-              <div class="col-md-8" >
-                  <Temperature style={tempStyle} />
+              <div style={tempStyle} >
+                  <Temperature  />
               </div>
-              <div class="col-md-8" >
-                  <Humidity style={humidStyle}/>
+              <div style={humidStyle} >
+                  <Humidity />
               </div>
           </div>
           <div id={"map"} style={mapStyle}>
