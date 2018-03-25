@@ -58,7 +58,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header" style={logoStyle}>
             <img
-                src = {require("../images/parkemon-01.png")}
+                src = {require("../images/Parkemon-01.png")}
                 alt = "Missing Logo"
                 className="img-responsive"
                 height = "250px"/>
