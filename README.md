@@ -25,7 +25,10 @@ Players will become more invested and engaged in public spaces near them. In the
 
 ## Technology
 
+This is a React app using Create React App, Arduino, and Adafruit's API. Hardware by Adafruit. 
+
 ## What is Working
+
 
 ## Team Members
 
