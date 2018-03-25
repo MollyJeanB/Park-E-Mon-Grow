@@ -29,6 +29,7 @@ This is a React app using Create React App, Arduino, and Adafruit's API. Hardwar
 
 ## What is Working
 
+This is prototype that shows data from one park pin sensor.
 
 ## Team Members
 
