@@ -1,7 +1,7 @@
-# Park-E-Mon-Grow
+# Parkemon Grow
 Team Eleven's IoT #WWCodeHack18 project
 
-
+![img1](https://raw.githubusercontent.com/MollyJeanB/Park-E-Mon-Grow/master/src/images/parkemon-01.png)
 
 ## HIGH LEVEL GOAL
 
