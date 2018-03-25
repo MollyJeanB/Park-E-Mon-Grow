@@ -22,3 +22,11 @@ In order to get points, the players must go to the pin site. When they get close
 At the end of the month, the sponsor makes a contribution to the non-profit whose team has the most points.
 
 Players will become more invested and engaged in public spaces near them. In the cases of communally maintained spaces, the pins will additionally make people aware of when places might need attention and watering.
+
+## Technology
+
+## What is Working
+
+## Team Members
+
+Molly Jean Bennett, oby Fee, Katy LaFrance, Stephanie Smith, Missy Tracy, & A. Scott Tribble
