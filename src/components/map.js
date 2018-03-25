@@ -7,8 +7,8 @@ render() {
 
     return (
       <Map google={this.props.google}
-          style={ {width: "500px",
-          height: "300px"}
+          style={ {width: "900px",
+          height: "490px"}
 
         }
           initialCenter={{

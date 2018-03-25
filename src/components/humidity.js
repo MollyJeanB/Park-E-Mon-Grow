@@ -41,11 +41,7 @@ class Humidity extends Component {
   humidityVal = Math.floor(this.state.humidity) + '%'
 } else if (typeof this.state.humidity === "string"){  humidityVal = this.state.humidity }
       return (
-          <div id={"humid"} class={"col-md"}>
-            <p>
-              <h5>Humidity:</h5> {humidityVal}
-            </p>
-          </div>
+            <p><h5>Humidity:</h5> {humidityVal}</p>
       );
   }
 }

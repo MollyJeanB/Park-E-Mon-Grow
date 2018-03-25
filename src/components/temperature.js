@@ -40,11 +40,7 @@ class Temperature extends Component {
         const temperatureVal = Math.floor(parseInt(this.state.temperature)) ? Math.floor(parseInt(this.state.temperature)) + '°' : this.state.temperature
 
         return  (
-            <div id={"temp"} class={"col-md"}>
-                <p>
-                    <h5>Temperature:</h5>{temperatureVal}
-                </p>
-            </div>
+            <p><h5>Temperature:</h5>{temperatureVal}</p>
         );
     }
 }

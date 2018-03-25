@@ -3,7 +3,6 @@ import logo from "./logo.svg";
 import "./App.css";
 import Temperature from "./temperature"
 import MapContainer from "./map"
-
 import Humidity from "./humidity"
 
 var readingsStyle = {
@@ -14,26 +13,37 @@ var readingsStyle = {
     width: "auto"
 };
 
+var tempStyle = {
+    type: "col-md-8"
+}
+
+var humidStyle = {
+    type: "col-md-8"
+}
+
 var teamStyle = {
-    type: "row",
-    backgroundColor: "#2C97C1",
-    border: "2px solid",
+    class: "row",
+    backgroundColor: "#ABACA6",
+    border: "1px solid",
     height: "200px",
     width: "auto"
 };
 
 var mapStyle = {
     border: "2px solid",
-    type: "row",
-    height: "400px",
+    class: "row",
+    paddingLeft: "8%",
+    paddingTop: "2%",
+    paddingBottom: "2%",
+    height: "550px",
     width: "auto",
-    alignSelf: "center"
 }
 
 var logoStyle = {
     width: "auto",
-    height: "200px",
-    type: "row"
+    height: "300px",
+    type: "row",
+    backgroundColor:"#504040"
 
 }
 
@@ -49,15 +59,15 @@ class App extends Component {
                 className="img-responsive" />
         </header>
           <div style={teamStyle}>
-              <p>Team Name:</p> //add team element
-              <p>Team Points:</p> // add team points
+              <div class="col-md-8"><p>Team Name:</p> //add team element</div>
+              <div class="col-md-8"><p>Team Points:</p> // add team points</div>
           </div>
           <div style={readingsStyle}>
-              <div class="col-md">
-                  <Temperature />
+              <div class="col-md-8" >
+                  <Temperature style={tempStyle} />
               </div>
-              <div class="col-md">
-                  <Humidity />
+              <div class="col-md-8" >
+                  <Humidity style={humidStyle}/>
               </div>
           </div>
           <div id={"map"} style={mapStyle}>
