@@ -8,7 +8,6 @@
 }
 
 .App-header {
-  background-color: #222;
   height: 150px;
   padding: 20px;
   color: white;
@@ -26,3 +25,23 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+body {
+  margin: 10px;
+  padding: 20px;
+  font-family: sans-serif;
+  background-color: #A1F9FF;
+}
+
+.root {
+  padding:15px;
+}
+
+
+/*
+Pokemon go colors:
+Sherman blue #2C97C1;
+Sun Blue #A1F9FF;
+iam_100thNrBLACK #504040
+Chruch stone #ABACA6;
+in the beginning #08090D; */

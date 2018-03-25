@@ -39,7 +39,9 @@ class Temperature extends Component {
 
         const temperatureVal = Math.floor(parseInt(this.state.temperature)) ? Math.floor(parseInt(this.state.temperature)) + '°' : this.state.temperature
 
-        return  (<p>{temperatureVal}</p>);
+        return  (
+            <p><h4>Temperature:</h4>{temperatureVal}</p>
+        );
     }
 }
 

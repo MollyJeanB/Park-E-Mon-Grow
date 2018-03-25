@@ -40,7 +40,9 @@ class Humidity extends Component {
   } else if (typeof parseInt(this.state.humidity) === "number") {
   humidityVal = Math.floor(this.state.humidity) + '%'
 } else if (typeof this.state.humidity === "string"){  humidityVal = this.state.humidity }
-    return (<p>{humidityVal}</p>);
+      return (
+            <p><h4>Humidity:</h4> {humidityVal}</p>
+      );
   }
 }
 
