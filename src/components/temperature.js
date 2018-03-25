@@ -36,7 +36,8 @@ class Temperature extends Component {
     }
 
     render () {
-        const temperatureVal = Math.floor(parseInt(this.state.temperature)) ? Math.floor(parseInt(this.state.temperature)) : this.state.temperature
+
+        const temperatureVal = Math.floor(parseInt(this.state.temperature)) ? Math.floor(parseInt(this.state.temperature)) + '°' : this.state.temperature
 
         return  (<p>{temperatureVal}</p>);
     }
