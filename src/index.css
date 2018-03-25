@@ -1,5 +1,28 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: 10px;
+  padding: 20px;
   font-family: sans-serif;
+  background-color: #A1F9FF;
 }
+
+App.header {
+    background-color: #FFFFFF ;
+}
+
+Map {
+    background-color: #504040;
+    padding-right: 10px;
+}
+
+.root {
+    padding:15px;
+}
+
+.map{
+    margin-left: 30px;
+}
+
+.readings {
+
+}
+
