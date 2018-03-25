@@ -33,4 +33,4 @@ This is prototype that shows data from one park pin sensor.
 
 ## Team Members
 
-Molly Jean Bennett, oby Fee, Katy LaFrance, Stephanie Smith, Missy Tracy, & A. Scott Tribble
+Molly Jean Bennett, Toby Fee, Katy LaFrance, Stephanie Smith, Missy Tracy, & A. Scott Tribble
