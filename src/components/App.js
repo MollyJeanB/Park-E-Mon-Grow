@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Temperature from "./temperature"
+import MapContainer from "./map"
 
 import Humidity from "./humidity"
 
@@ -15,7 +16,7 @@ class App extends Component {
         <Temperature />
 
         <Humidity />
-
+<MapContainer />
       </div>
     );
   }
