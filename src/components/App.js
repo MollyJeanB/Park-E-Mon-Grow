@@ -35,7 +35,7 @@ var teamStyle = {
 
 var mapStyle = {
     className: "row",
-    paddingLeft: "8%",
+    paddingLeft: "15%",
     paddingTop: "2%",
     paddingBottom: "2%",
     height: "550px",
