@@ -4,9 +4,8 @@ class Humidity extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      error: null,
-      isLoaded: false,
-      items: []
+    humidity: "",
+    error: null
     };
   }
 
@@ -16,11 +15,27 @@ class Humidity extends Component {
         "content-type": "application/json",
         "X-AIO-Key": "fdf568b9190c4c01af03667d3d43fa0d"
       }
-    });
+    }).then(res => {
+      if (!res.ok) {
+        return Promise.reject(res.statusText);
+      }
+      return res.json()
+    }).
+    then(data => this.setState({
+      humidity: data[0].value
+    })
+  ).catch(err => {
+    this.setSate({
+      error: "Could not load humidity",
+    })
+  })
   }
 
   render() {
-    return <p>hi i'm Humidity</p>;
+
+    const humidityVal = Math.floor(parseInt(this.state.humidity)) ? Math.floor(parseInt(this.state.humidity)) : this.state.humidity
+
+    return (<p>{humidityVal}%</p>);
   }
 }
 
