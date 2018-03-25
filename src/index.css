@@ -3,16 +3,10 @@ body {
   padding: 20px;
   font-family: sans-serif;
   background-color: #A1F9FF;
+    font-family: 'Raleway', sans-serif;
 }
 
-App.header {
-    background-color: #FFFFFF ;
-}
 
-Map {
-    background-color: #504040;
-    padding-right: 10px;
-}
 
 .root {
     padding:15px;
@@ -22,7 +16,4 @@ Map {
     margin-left: 30px;
 }
 
-.readings {
-
-}
 
