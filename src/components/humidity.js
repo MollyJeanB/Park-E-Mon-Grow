@@ -33,9 +33,14 @@ class Humidity extends Component {
 
   render() {
 
-    const humidityVal = Math.floor(parseInt(this.state.humidity)) ? Math.floor(parseInt(this.state.humidity)) : this.state.humidity
+ let humidityVal = Math.floor(parseInt(this.state.humidity)) ? Math.floor(parseInt(this.state.humidity)) : this.state.humidity
 
-    return (<p>{humidityVal}%</p>);
+  if (this.state.humidity === "nan" || this.state.humidity === NaN ) {
+     humidityVal = "No data available at this time"
+  } else if (typeof parseInt(this.state.humidity) === "number") {
+  humidityVal = Math.floor(this.state.humidity) + '%'
+} else if (typeof this.state.humidity === "string"){  humidityVal = this.state.humidity }
+    return (<p>{humidityVal}</p>);
   }
 }
 

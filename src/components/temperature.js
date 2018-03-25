@@ -11,7 +11,7 @@ class Temperature extends Component {
     }
 
     componentDidMount() {
-        fetch("https://io.adafruit.com/api/v2/missyt/feeds/temp/data", 
+        fetch("https://io.adafruit.com/api/v2/missyt/feeds/temp/data",
     {
         headers: {
             "content-type": "application/json",
@@ -24,7 +24,7 @@ class Temperature extends Component {
             }
             return res.json()
         })
-        .then(data => 
+        .then(data =>
             this.setState({
                 temperature: data[0].value
             })
@@ -36,7 +36,7 @@ class Temperature extends Component {
     }
 
     render () {
-        const temperatureVal = Math.floor(parseInt(this.state.temperature)) ? Math.floor(parseInt(this.state.temperature)) : this.state.temperature
+        const temperatureVal = Math.floor(parseInt(this.state.temperature)) ? Math.floor(parseInt(this.state.temperature)) + '°' : this.state.temperature
 
         return  (<p>{temperatureVal}</p>);
     }
