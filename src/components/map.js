@@ -20,7 +20,6 @@ render() {
         <Marker
           position={{lat: 45.5200937, lng:-122.6727816}}
           name={'Park Pin 1'}
-          icon={"../images/seedling.png"}
          />
       </Map>
     );
